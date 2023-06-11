@@ -2,27 +2,36 @@ html{
     font-size: 15px;
     font-family: "Open Sans", sans-serif; 
     background-color: rgb(73, 114, 190);
+    background: rgb(255,255,255);
+    background: linear-gradient(141deg, rgba(255,255,255,1) 5%, rgba(130,134,209,1) 37%, rgba(190,14,14,1) 65%, rgba(0,0,0,1) 92%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
  
 main{
-    width: 500px;
+    max-width: 500px;
+    max-height: 1200px;
     margin: 0 auto;
     margin-top: 10px;
     background-color: #ffffff;
-    padding: 0 20px 20px 20px;
+    padding: 0 20px 10px 20px;
     border: 5px solid black;
+    border-radius: 2%;
 }
 
 .momo{
     display: block;
     margin: 0 auto;
-    width: 100%;
+    max-width: 250px;
+    margin-top: 3%;
+    border-radius: 3%;
 }
 
 #opcion, #mandar{
     display: block;
     margin: 10% auto;
     width: 25%;
+    text-align: center;
 }
 
 .lol{
@@ -30,3 +39,77 @@ main{
     margin: 0 auto;
     font-size: 120%;
 }
+
+p{
+    font-size: 100%;
+    margin: 1px;
+    padding-bottom: 3px;
+}
+
+@media (max-width: 600px) {
+    
+    .momo{
+        display: block;
+        margin: 0 auto;
+        max-width: 2000px;
+        margin-top: 3%;
+        border-radius: 3%;
+    }
+    
+    #opcion, #mandar{
+        display: block;
+        margin: 10% auto;
+        width: 25%;
+        text-align: center;
+    }
+    
+    .lol{
+        color: blue;
+        margin: 0 auto;
+        font-size: 100%;
+    }
+    
+    p{
+        font-size: 50%;
+        margin: 1px;
+        padding-bottom: 3px;
+    }
+    
+    header{
+        font-size: 10px;
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    .momo{
+        display: block;
+        margin: 0 auto;
+        max-width: 150px;
+        margin-top: 3%;
+        border-radius: 3%;
+    }
+    
+    #opcion, #mandar{
+        display: block;
+        margin: 10% auto;
+        width: 25%;
+        text-align: center;
+    }
+    
+    .lol{
+        color: blue;
+        margin: 0 auto;
+        font-size: 120%;
+    }
+    
+    p{
+        font-size: 80%;
+        margin: 1px;
+        padding-bottom: 3px;
+    }
+    
+    header{
+        font-size: 10px;
+    }
+  }
